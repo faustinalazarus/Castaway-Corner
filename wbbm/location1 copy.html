@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="https://kit.fontawesome.com/117d3269ab.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/57bbf81a1a.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="newlocation copy.css">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    </head>
+
+    <body>
+
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <li><a href="story copy.html"><i class="fas fa-book" style="padding-right: 10px;"></i> Story</a></li>
+            <li><a href="character copy.html"><i class="fas fa-user" style="padding-right: 10px;"></i> Characters</a></li>
+            <li><a href="location copy.html"><i class="fas fa-mountain" style="padding-right: 10px;"></i> Locations</a></li>
+            <li><a href="item copy.html"><i class="fas fa-magic" style="padding-right: 10px;"></i> Items</a></li>  
+          </div>
+
+          <script src="newcharacter copy 2.js"></script>
+          
+          <div id="main">
+
+            <div>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#"> <button class="navbar-toggler-icon" onclick="openNav()"> </button></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="homepage.html" style="font-size: 22px; font-family: 'Montserrat', sans-serif; font-weight: 500;">
+                        <i class="fas fa-home" style="padding-right: 10px;"></i>Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="payment.html" style="font-size: 22px; font-family: 'Montserrat', sans-serif; font-weight: 500;">
+                        <i class="fas fa-arrow-circle-up" style="padding-right: 10px;"></i>Upgrade</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html" style="font-size: 22px; font-family: 'Montserrat', sans-serif; font-weight: 500;">
+                            <i class="fas fa-sign-out-alt" style="padding-right: 10px;"></i>Log Out</a>
+                      </li>
+                
+                    
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                  </form>
+                </div>
+              </nav>
+
+              <br>
+            </div>
+
+            <img src="location1.png" alt="nc1" style="height: 100%; width: 100%;">
+
+            <div class="scroll">
+                <div class="info">
+                    <div class="card">
+                        <div class="bar">
+                            <p style="font-family: 'Montserrat', sans-serif; font-size: 25px;"><b>Overview</b></p>
+                        </div>
+                        <form class="form">
+                            <label><i class="fas fa-fingerprint"></i>Name</label><br>
+                            <input type="text" name="name" size="40" value="City of Qessul" readonly><br>
+                
+                            <label><i class="fas fa-globe"></i>Universe</label><br>
+                            <input type="text" name="universe" size="40" value="Kantana" readonly><br>
+
+                            <label><i class="fas fa-mountain"></i>Type</label><br>  
+                            <input type="text" name="type" size="40" value="Modern civilization" readonly><br> 
+
+                            <label><i class="fab fa-battle-net"></i>Description</label><br>
+                            <input type="text" name="decription" size="40" value="Eliptical city of Qessul." readonly><br> 
+                
+                            <label><i class="fas fa-ruler-vertical"></i>Size</label><br>
+                            <input type="text" name="size" size="40" value="50km" readonly><br>
+                            
+                            <label><i class="fas fa-sticky-note"></i>Extra notes</label><br>
+                            <input type="text" name="extra" size="40" value="none" readonly>
+                        </form>
+                        </form>
+                    </div>
+                
+                    <div class="cont">
+                        
+                    <div class="card2">
+                        <div class="bar">
+                            <p style="font-family: 'Montserrat', sans-serif; font-size: 25px;"><b>Culture</b></p>
+                        </div>
+                        <form class="form">
+                            <label><i class="fas fa-users"></i>Population</label><br>
+                            <input type="text" name="tech" size="40" value="1277" readonly><br>
+
+                            <label><i class="fas fa-language"></i>Language</label><br>
+                            <input type="text" name="physics" size="40" value="qrill" readonly><br>
+                
+                            <label><i class="fas fa-tractor"></i>Major occupation</label><br>  
+                            <input type="text" name="magic" size="40" value="Mining" readonly><br> 
+                
+                            <label><i class="fas fa-balance-scale-right"></i>Laws</label><br>
+                            <input type="text" name="gravity" size="40" value="Laws of magic" readonly><br> 
+                
+                            <label><i class="fas fa-futbol"></i>Sports</label><br>  
+                            <input type="text" name="edu" size="40" value="Track" readonly><br>
+                            
+                            <label><i class="far fa-money-bill-alt"></i>Currency</label><br>
+                            <input type="text" name="religion" size="40" value="Quessel djon" readonly><br>
+
+                            <label><i class="fas fa-sticky-note"></i>Extra notes</label><br>
+                            <input type="text" name="extra" size="40" value="none" readonly>
+                        </form>
+                    </div>
+                    </div>
+
+                    <div class="cont">
+                    <div class="card">
+                        <div class="bar">
+                            <p style="font-family: 'Montserrat', sans-serif; font-size: 25px;"><b>History</b></p>
+                        </div>
+                        <form class="form">
+                            <label><i class="fas fa-calendar-alt"></i>Established date</label><br>
+                            <input type="text" name="date" size="40" value="Circa 1102" readonly><br>
+                
+                            <label><i class="fas fa-fighter-jet"></i>Notable wars</label><br>
+                            <input type="text" name="wars" size="40" value="Battle of Denzdof" readonly><br>
+                
+                            <label><i class="fab fa-galactic-senate"></i>Notable affiliations</label><br>  
+                            <input type="text" name="aff" size="40" value="Affliated with the Altraz order" readonly><br> 
+                
+                            <label><i class="far fa-bookmark"></i>Expanded territories</label><br>  
+                            <input type="text" name="terr" size="40" value="Sea of bredon" readonly><br>
+
+                            <label><i class="fas fa-book"></i>Founding story</label><br>
+                            <input type="text" name="extra" size="40" value="Established by Count ledon after the battle of Denzdof" readonly><br>
+                
+                            <label><i class="fas fa-sticky-note"></i>Extra notes</label><br>
+                            <input type="text" name="extra" size="40" value="none" readonly>
+                            
+                        
+                        
+                        </form>
+                        </div>
+                        </div>
+
+                        <div class="cont">
+
+                            <div class="card2">
+                                <div class="bar">
+                                    <p style="font-family: 'Montserrat', sans-serif; font-size: 25px;"><b>Geography</b></p>
+                                </div>
+                                <form class="form">
+
+                                    <label><i class="fas fa-wind"></i>Climate</label><br>
+                            <input type="text" name="climate" size="40" value="Mild Summer, Moderate Monsoon and harsh winter" readonly><br>
+                
+                            <label><i class="fas fa-tree"></i>Crops</label><br>
+                            <input type="text" name="crops" size="40" value="Mainly evergreen and some ferns" readonly><br>
+                
+                            <label><i class="fas fa-mountain"></i>Terrain</label><br>
+                            <input type="text" name="terrain" size="40" value="Surrounder by hills and mountains" readonly><br>
+
+                            <label><i class="fas fa-tint"></i>Water bodies</label><br>
+                            <input type="text" name="water" size="40" value="River Kondor running from the snowy peaks" readonly><br>
+                
+                            <label><i class="fas fa-cloud-showers-heavy"></i>Rains</label><br>  
+                            <input type="text" name="rain" size="40" value="4 month moderate to heavy showers" readonly><br>  
+                
+                            <label><i class="fas fa-map-marked-alt"></i>Located at</label><br>  
+                            <input type="text" name="location" size="40" value="Altraz continent" readonly><br>
+
+                            <label><i class="fas fa-landmark"></i>Major landmarks</label><br>
+                            <input type="text" name="landmarks" size="40" value="Snowy peaks of denzdof" readonly><br>
+
+
+
+                            
+                                </form>
+                            </div>
+                            </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+                
+            </div>
+        </div>  
+
+        <br>
+
+        <footer class = "footer">
+            <div class = "footer-container">
+                <div>
+                    <h2>About Us </h2>
+                    <p>This is an online notebook, by authors, for authors. When we created and designed this website, we had the intention to help young budding authors to achieve their dreams of bringing their fictional universe to life. A dream led by many, but supported by few is likely to fail. We here at Castaway Corner wish to help you achieve that dream to the best of your ability. With more than 10,000 users nation-wide, we only hope to grow and develop our website further.</p>
+                    <ul class = "social-icons">
+                        <li class = "flex">
+                            <i class = "fa fa-twitter fa-2x"></i>
+                        </li>
+                        <li class = "flex">
+                            <i class = "fa fa-facebook fa-2x"></i>
+                        </li>
+                        <li class = "flex">
+                            <i class = "fa fa-instagram fa-2x"></i>
+                        </li>
+                    </ul>
+                </div>
+        
+                <div>
+                    <h2>Useful Links</h2>
+                    <a href = "#">Blog</a>
+                    <a href = "#">About</a>
+                    <a href = "#">Subscription</a>
+                    <a href = "#">Gift Card</a>
+                </div>
+        
+                <div>
+                    <h2>Privacy</h2>
+                    <a href = "#">Career</a>
+                    <a href = "#">About Us</a>
+                    <a href = "#">Contact Us</a>
+                    <a href = "#">Services</a>
+                </div>
+        
+                <div>
+                    <h2>Have A Question</h2>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-map-marker-alt"></i>
+                        </span>
+                        <span>
+                            A-1100 Rainbow Road, Mumbai, Maharashtra, 02
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-phone-alt"></i>
+                        </span>
+                        <span>
+                            7388902671
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-envelope"></i>
+                        </span>
+                        <span>
+                            info@domain.com
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>

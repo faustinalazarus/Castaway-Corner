@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="https://kit.fontawesome.com/117d3269ab.js" crossorigin="anonymous"></script>
+    </head>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+            font-family: 'Josefin Sana', sans-serif;
+        }
+
+        body{
+            background: #FFFACD ;
+        }
+
+        #c{
+            position: relative;
+            left: +25px;
+        }
+
+        h2{
+            position: relative;
+            left: -10px;
+        }
+
+        .wrapper{
+            display: flex;
+            position: relative;
+            flex-wrap: wrap;
+        }
+
+        .info{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .wrapper .sidebar{
+            position: fixed;
+            width: 200px;
+            height: 100%;
+            background:	#B8860B;
+            padding: 30px 0;
+        }
+
+        .wrapper .sidebar h2{
+            color: #fff;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .wrapper .sidebar ul li{
+            padding: 15px;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+            border-top: 1px solid rgba(225,225,225,0.05);
+        }
+
+        .wrapper .sidebar ul li a{
+            color: white;
+            display: block;
+        }
+
+        .wrapper .sidebar ul li a .fas{
+            width: 25px;
+        }
+
+        .wrapper .sidebar ul li:hover{
+            background:	#DAA520;
+        }
+
+        .wrapper .sidebar ul li:hover a{
+            color: #fff;
+        }
+
+        .wrapper .sidebar .social_media{
+            position: absolute;
+            bottom: 0%;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+        }
+
+        .wrapper .sidebar .social_media a{
+            display: block;
+            width: 40px;
+            background:	#DAA520;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            margin: 0 5px;
+            color: #bdb8d7;
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+        }
+
+        .wrapper .main_content{
+            width: 100%;
+            margin-left: 200px;
+        }
+
+        .wrapper .main_content .header{
+            padding: 35px;
+            background:	#DAA520;
+            color: #717171;
+            border-bottom: 1px solid #e0e4e8;
+            text-align: center;
+        }
+
+        .wrapper .main_content .info{
+            margin: 20px;
+            display: flex;      
+        }
+
+        .card{
+        width: 350px;
+        height: 450px;
+        border-style: solid;
+        border-color: #e0e4e8;
+        background: #EBDEF0 ;
+    }
+
+        .card .bar{
+            width: 100%;
+            height: 50px;
+            border-bottom: 2px solid #e0e4e8;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            background-color: #F1C40F;
+    }
+
+        .form label{
+            font-family: 'Josefin Sana', sans-serif;
+    }
+
+        .form label .fas{
+            border-right: 10px solid #F9E79F;
+    }
+
+        .form label .fab{
+            border-right: 10px solid #F9E79F;
+    }
+
+        .form input{
+            display: block;
+            margin-bottom: 5px;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid;
+    }
+
+        .card {
+            background: #F9E79F  ;
+    }
+
+        form{
+            margin: 15px 0 0 10px;
+    }
+
+        .cont{
+            position: relative;
+            margin-left: 100px;
+    }
+
+        .card2{
+            width: 350px;
+            height: 520px;
+            border-style: solid;
+            border-color: #e0e4e8;
+            background: #F9E79F ;
+    }
+
+        .card2 .bar{
+            width: 100%;
+            height: 50px;
+            border-bottom: 2px solid #e0e4e8;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            background-color: #F1C40F ;
+    }    
+    
+    .action{
+        height: 300px;
+        width: 170px;
+        border-style: solid;
+        border-color: whitesmoke;
+        background: whitesmoke;
+        margin-left: 100px;
+    }
+
+    .actop{
+        background: grey;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .action ul li{
+        padding: 15px;
+        border-bottom: 1px solid rgba(0,0,0,0.05);
+        border-top: 1px solid rgba(225,225,225,0.05);
+    }
+
+    .action ul li .fas{
+        margin-right: 5px;
+    }
+
+    .action ul li:hover{
+        color: #DAA520;
+    }
+
+    .far{
+        margin-right: 5px ;
+    }
+
+    textarea:focus, input:focus{
+    outline: none;
+   }
+    </style>
+
+    <body>
+        <div class="wrapper">
+            <div class="sidebar">
+                <h2>Castaway<br><p id="c">Corner</p></h2>
+                <ul>
+                    <li><a href="story.html"><i class="fas fa-book"></i> Story</a></li>
+                    <li><a href="character.html"><i class="fas fa-user"></i> Characters</a></li>
+                    <li><a href="location.html"><i class="fas fa-mountain"></i> Locations</a></li>
+                    <li><a href="item.html"><i class="fas fa-magic"></i> Items</a></li>  
+                </ul>
+
+                <div class="social_media">
+                    <a href=""> <i class="fab fa-facebook"></i>
+                    <a href=""> <i class="fab fa-instagram"></i></a>
+                    <a href=""> <i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="main_content">
+                <div class="header" style="font-size: 30px; color: white;"><b>New Location</b></div>
+                <div class="info">
+                    <div class="card">
+                        <div class="bar">
+                            <p style="font-family: 'Josefin Sana', sans-serif; font-size: 25px;">Overview</p>
+                        </div>
+                        <form class="form">
+                            <label><i class="fas fa-fingerprint"></i>Name</label><br>
+                            <input type="text" name="name" size="40"><br>
+                
+                            <label><i class="fas fa-globe"></i>Universe</label><br>
+                            <input type="text" name="universe" size="40"><br>
+
+                            <label><i class="fas fa-mountain"></i>Type</label><br>  
+                            <input type="text" name="type" size="40"><br> 
+
+                            <label><i class="fab fa-battle-net"></i>Description</label><br>
+                            <input type="text" name="decription" size="40"><br> 
+                
+                            <label><i class="fas fa-ruler-vertical"></i>Size</label><br>
+                            <input type="text" name="size" size="40"><br>
+                            
+                            <label><i class="fas fa-sticky-note"></i>Extra notes</label><br>
+                            <input type="text" name="extra" size="40">
+                        </form>
+                    </div>
+                
+                    <div class="cont">
+                    <div class="card2">
+                        <div class="bar">
+                            <p style="font-family: 'Josefin Sana', sans-serif; font-size: 25px;">Culture</p>
+                        </div>
+                        <form class="form">
+                            <label><i class="fas fa-users"></i>Population</label><br>
+                            <input type="text" name="tech" size="40"><br>
+
+                            <label><i class="fas fa-language"></i>Language</label><br>
+                            <input type="text" name="physics" size="40"><br>
+                
+                            <label><i class="fas fa-tractor"></i>Major occupation</label><br>  
+                            <input type="text" name="magic" size="40"><br> 
+                
+                            <label><i class="fas fa-balance-scale-right"></i>Laws</label><br>
+                            <input type="text" name="gravity" size="40"><br> 
+                
+                            <label><i class="fas fa-futbol"></i>Sports</label><br>  
+                            <input type="text" name="edu" size="40"><br>
+                            
+                            <label><i class="far fa-money-bill-alt"></i>Currency</label><br>
+                            <input type="text" name="religion" size="40"><br>
+
+                            <label><i class="fas fa-sticky-note"></i>Extra notes</label><br>
+                            <input type="text" name="extra" size="40">
+                        </form>
+                    </div>
+                    </div>
+
+                    <div class="action">
+                        <div class="actop">
+                            Actions
+                        </div>
+                        <ul>
+                            <li><i class="far fa-save"></i>Save</li>
+                            <li><i class="fas fa-window-restore"></i>Reset</li>
+                            <li><i class="fas fa-trash-alt"></i>Delete</li>
+                            <li><i class="fas fa-eye"></i>View</li>
+                            <li><i class="fas fa-archive"></i>Archive</li>
+                        </ul>
+                    </div>
+
+                    <div class="card2" style="margin-left: 90px; position: relative; left: -90px;">
+                        <div class="bar">
+                            <p style="font-family: 'Josefin Sana', sans-serif; font-size: 25px;">Geography</p>
+                        </div>
+                        <form class="form">
+                            <label><i class="fas fa-wind"></i>Climate</label><br>
+                            <input type="text" name="climate" size="40"><br>
+                
+                            <label><i class="fas fa-tree"></i>Crops</label><br>
+                            <input type="text" name="crops" size="40"><br>
+                
+                            <label><i class="fas fa-mountain"></i>Terrain</label><br>
+                            <input type="text" name="terrain" size="40"><br>
+
+                            <label><i class="fas fa-tint"></i>Water bodies</label><br>
+                            <input type="text" name="water" size="40"><br>
+                
+                            <label><i class="fas fa-cloud-showers-heavy"></i>Rains</label><br>  
+                            <input type="text" name="rain" size="40"><br>  
+                
+                            <label><i class="fas fa-map-marked-alt"></i>Located at</label><br>  
+                            <input type="text" name="location" size="40"><br>
+
+                            <label><i class="fas fa-landmark"></i>Major landmarks</label><br>
+                            <input type="text" name="landmarks" size="40"><br>
+                        </form>
+                    </div>
+
+                    <div class="card" style="margin-top: 30px;">
+                        <div class="bar">
+                            <p style="font-family: 'Josefin Sana', sans-serif; font-size: 25px;">History</p>
+                        </div>
+                        <form class="form">
+                            <label><i class="fas fa-calendar-alt"></i>Established date</label><br>
+                            <input type="text" name="date" size="40"><br>
+                
+                            <label><i class="fas fa-fighter-jet"></i>Notable wars</label><br>
+                            <input type="text" name="wars" size="40"><br>
+                
+                            <label><i class="fab fa-galactic-senate"></i>Notable affiliations</label><br>  
+                            <input type="text" name="aff" size="40"><br> 
+                
+                            <label><i class="far fa-bookmark"></i>Expanded territories</label><br>  
+                            <input type="text" name="terr" size="40"><br>
+                
+                            <label><i class="fas fa-sticky-note"></i>Extra notes</label><br>
+                            <input type="text" name="extra" size="40"><br>
+
+                            <label><i class="fas fa-book"></i>Founding story</label><br>
+                            <input type="text" name="extra" size="40">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </body>
+</html>

@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+    
+    #img2{
+      width: 100%;
+      height: 100%;
+      
+    }
+
+    .banner{
+      position: relative;
+      margin: 0 auto;
+    }
+
+    .banner img{
+      width: 100%
+    }
+
+    .heading{
+      color: #ffffff ;
+      position: absolute;
+      padding-left: 50px;
+      top: 15%;
+      width: 100%;
+      text-align: left;
+      font-size: 100px;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    
+  .heading1{
+      color: #4b53e4 ;
+      text-align: center;
+      font-size: 50px;
+      font-family: 'Montserrat', sans-serif;
+      padding-bottom: 0%;
+
+    }
+  
+
+  
+
+    .main1{
+      margin-left: 150px;
+      margin-right: 150px;
+      background-color: #ffffff;
+    }
+
+    .main1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 20px;
+      color: #000000 ;
+    }
+
+    .container {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+  img {
+      width: 100%;
+      height: 100%;
+      transition: all 0.5s;
+  }
+
+  .caption {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: all 0.5s;
+      background: rgba(0, 0, 0, 0);
+  }
+
+  .caption h1 {
+      margin: 0;
+  }
+
+  .caption p {
+      font-size: 18px;
+      text-align: center;
+  }
+
+  .caption:hover {
+      opacity: 1;
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+  }
+
+  .main1{
+      margin-left: 150px;
+      margin-right: 150px;
+    }
+
+ .brief1 {
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      width: 40%;
+      width: 300px;
+      height: 490px;
+    }
+
+    .brief1:hover {
+      box-shadow: 0 20px 40px 0 rgba(0,0,0,0.2);
+    }
+
+    .desc1 {
+        padding: 2px 16px;
+    }
+
+    .cimg1{
+        width: 100%;
+        height: 250px
+    }
+
+    #img3{
+        height:100%;
+        width:100%
+    }
+
+
+    .brief1{
+        margin-left: 10px;
+    }
+
+    .wr1{
+      display: flex;
+      flex-wrap: nowr1ap;
+      background-color: white;
+    }
+
+    .wr1 .brief1 .desc1 p{
+      font-size: 18px;
+    }
+
+    body{
+      background-color: #ffffff;
+    }
+
+    .prem{
+      margin-top: 50px;
+      width: 100%;
+    }
+
+    .footer{
+      background: var(--dark);
+      color: #fff;
+      text-align: center;
+      background-color: black;
+  }
+
+      .footer-container{
+          width: 85vw;
+          margin: 0 auto;
+          padding: 30px 0;
+      }
+      .footer-container p, .footer-container a, .footer-container span{
+          opacity: 0.8;
+      }
+      .footer a{
+          display: block;
+          color: #fff;
+          text-decoration: none;
+      }
+      .social-icons{
+          list-style: none;
+          display: flex;
+          justify-content: left;
+          padding: 15px 0;
+      }
+      .social-icons li{
+          margin: 0 10px;
+          width: 50px;
+          height: 50px;
+          background: #000000;
+          border-radius: 50%;
+          transition: var(--transition);
+          cursor: pointer;
+      }
+      .social-icons li:hover{
+          background: rgb(0, 0, 0);
+          color: #727272;
+      }
+      .contact-item span{
+          display: block;
+      }
+      @media(min-width: 900px){
+          .footer-container{
+              display: grid;
+              grid-template-columns: repeat(2, 1fr);
+              grid-gap: 20px;
+          }
+      }
+      @media(min-width: 1170px){
+          .footer{
+              text-align: left;
+          }
+          .footer-container{
+              grid-template-columns: repeat(4, 1fr);
+          }
+          .footer-container div:nth-child(1) p{
+              padding-right: 20px;
+          }
+          .contact-item{
+              display: grid;
+              grid-template-columns: 10% 90%;
+              margin-bottom: 15px;
+              align-items: center;
+          }
+      }
+
+      .showModal{
+          position: fixed;
+          background: transparent;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          z-index: 5;
+      }
+
+
+
+      .container1{
+  text-align: center;
+  padding-left: 20%;
+  width: 1000px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container1 .card{
+  position: relative;
+  cursor: pointer;
+}
+
+.container1 .card .face{
+  width: 300px;
+  height: 200px;
+  transition: 0.5s;
+}
+
+.container1 .card .face.face1{
+  position: relative;
+  background: #f7a915;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(100px);
+}
+
+.container1 .card:hover .face.face1{
+  background: #ff5841;
+  transform: translateY(0);
+}
+
+.container1 .card .face.face1 .content{
+  opacity: 0.9;
+  transition: 0.5s;
+}
+
+.container1 .card:hover .face.face1 .content{
+  opacity: 1;
+}
+
+.container1 .card .face.face1 .content img{
+  max-width: 100px;
+}
+
+.container1 .card .face.face1 .content h3{
+
+  margin: 10px 0 0;
+  padding: 15px;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container1 .card .face.face2{
+  position: relative;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: bor1der-box;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  transform: translateY(-100px);
+}
+
+.container1 .card:hover .face.face2{
+  transform: translateY(0);
+}
+
+.container1 .card .face.face2 .content p{
+  margin: 0;
+  padding: 0;
+}
+
+.container1 .card .face.face2 .content a{
+  margin: 15px 0 0;
+  display:  inline-block;
+  text-decoration: none;
+  font-weight: 900;
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(255, 255, 255);
+  padding: 5px;
+  border: 1px solid #333;
+}
+
+.container1 .card .face.face2 .content a:hover{
+  background: #333;
+  color: #fff;
+}
+
+
+.progress {
+background: rgba(255,255,255,0.1);
+justify-content: flex-start;
+border-radius: 100px;
+align-items: center;
+position: relative;
+
+display: flex;
+height: 50px;
+width: 1300px;
+}
+
+.progress-value {
+animation: load 5s normal forwards;
+box-shadow: 0 10px 40px -10px #fff;
+border-radius: 100px;
+background: rgb(0, 0, 0);
+height: 2px;
+width: 1000;
+
+}
+
+@keyframes load {
+0% { width: 0; }
+100% { width: 100%; }
+}
+
+
+
+
+
+
+  

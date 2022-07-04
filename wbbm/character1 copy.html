@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="https://kit.fontawesome.com/117d3269ab.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/57bbf81a1a.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="newcharacter copy 2.css">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    </head>
+
+    <body>
+
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <li><a href="story copy.html"><i class="fas fa-book" style="padding-right: 10px;"></i> Story</a></li>
+            <li><a href="character copy.html"><i class="fas fa-user" style="padding-right: 10px;"></i> Characters</a></li>
+            <li><a href="location copy.html"><i class="fas fa-mountain" style="padding-right: 10px;"></i> Locations</a></li>
+            <li><a href="item copy.html"><i class="fas fa-magic" style="padding-right: 10px;"></i> Items</a></li>  
+          </div>
+
+          <script src="newcharacter copy 2.js"></script>
+          
+          <div id="main">
+
+            <div>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#"> <button class="navbar-toggler-icon" onclick="openNav()"> </button></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="homepage.html" style="font-size: 22px; font-family: 'Montserrat', sans-serif; font-weight: 500;">
+                        <i class="fas fa-home" style="padding-right: 10px;"></i>Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="payment.html" style="font-size: 22px; font-family: 'Montserrat', sans-serif; font-weight: 500;">
+                        <i class="fas fa-arrow-circle-up" style="padding-right: 10px;"></i>Upgrade</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html" style="font-size: 22px; font-family: 'Montserrat', sans-serif; font-weight: 500;">
+                            <i class="fas fa-sign-out-alt" style="padding-right: 10px;"></i>Log Out</a>
+                      </li>
+                
+                    
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                  </form>
+                </div>
+              </nav>
+
+              <br>
+            </div>
+
+            <img src="character2.png" alt="nc1" style="height: 100%; width: 100%;">
+
+            <div class="scroll">
+                <div class="info">
+                    <div class="card">
+                        <div class="bar">
+                            <p style="font-family: 'Montserrat', sans-serif; font-size: 25px;"><b>Overview</b></p>
+                        </div>
+                        <form class="form">
+                            <label><i class="fas fa-fingerprint"></i>Name</label><br>
+                            <input type="text" name="firstname" size="40" value="JoJo Patrick" readonly><br>
+                
+                            <label><i class="fas fa-globe"></i>Universe</label><br>
+                            <input type="text" name="universe" size="40" value="Kantana" readonly><br>
+                
+                            <label><i class="fas fa-venus-mars"></i>Gender</label><br>  
+                            <input type="text" name="gender" size="40" value="Male" readonly><br> 
+                
+                            <label><i class="fas fa-birthday-cake"></i>Age</label><br>
+                            <input type="text" name="age" size="40" value="20" readonly><br> 
+                
+                            <label><i class="fab fa-critical-role"></i>Role</label><br>  
+                            <input type="text" name="role" size="40" value="Swordsman" readonly><br>
+                            
+                            <label><i class="fas fa-sticky-note"></i>Extra notes</label><br>
+                            <input type="text" name="extra" size="40" value="A swordsman who is loyal to his King">
+                        </form>
+                    </div>
+                
+                    <div class="cont">
+                        
+                    <div class="card2">
+                        <div class="bar">
+                            <p style="font-family: 'Montserrat', sans-serif; font-size: 25px;"><b>Looks</b></p>
+                        </div>
+                        <form class="form">
+                            <label><i class="far fa-meh-blank"></i> Skin tone</label><br>
+                            <input type="text" name="skin" size="40" value="Fair" readonly><br>
+                
+                            <label><i class="fas fa-tshirt"></i>Body type</label><br>
+                            <input type="text" name="body" size="40" value="Strong" readonly><br>
+                
+                            <label><i class="fas fa-ruler-vertical"></i>Height</label><br>  
+                            <input type="text" name="height" size="40" value="6'2" readonly><br> 
+                
+                            <label><i class="fas fa-weight"></i>Weight</label><br>
+                            <input type="text" name="weight" size="40" value="75kgs" readonly><br> 
+                
+                            <label><i class="fas fa-eye"></i>Eye colour</label><br>  
+                            <input type="text" name="eye" size="40" value="Greyish" readonly><br>
+                            
+                            <label><i class="fas fa-spinner"></i>Facial hair</label><br>
+                            <input type="text" name="hair" size="40" value="Yes" readonly><br>
+                
+                            <label><i class="fas fa-bolt"></i>Identifying marks</label><br>
+                            <input type="text" name="marks" size="40" value="Birthmark in the neck" readonly><br>
+                        </form>
+                    </div>
+                    </div>
+
+                    <div class="cont">
+                    <div class="card">
+                        <div class="bar">
+                            <p style="font-family: 'Montserrat', sans-serif; font-size: 25px;"><b>History</b></p>
+                        </div>
+                        <form class="form">
+                            <label><i class="fas fa-users"></i>Background</label><br>
+                            <input type="text" name="background" size="40" value="Swordsman Family" readonly><br>
+                
+                            <label><i class="fas fa-map-marked-alt"></i>Birthplace</label><br>
+                            <input type="text" name="birthplace" size="40" value="Okama" readonly><br>
+                
+                            <label><i class="fas fa-calendar-alt"></i>Birthday</label><br>  
+                            <input type="text" name="birthday" size="40" value="12th Januray 1540" readonly><br> 
+                
+                            <label><i class="fas fa-user-graduate"></i>Education</label><br>  
+                            <input type="text" name="edu" size="40" value="None" readonly><br>
+                
+                            <label><i class="fas fa-medal"></i>Achievments</label><br>
+                            <input type="text" name="achievement" size="40" value="Best Swordsman" readonly><br>
+                            
+                            <label><i class="fab fa-mandalorian"></i>Affiliation</label><br>
+                            <input type="text" name="mando" size="40" value="None" readonly>
+                        
+                        </form>
+                        </div>
+                        </div>
+
+                        <div class="cont">
+
+                            <div class="card2">
+                                <div class="bar">
+                                    <p style="font-family: 'Montserrat', sans-serif; font-size: 25px;"><b>Personality</b></p>
+                                </div>
+                                <form class="form">
+                                    <label><i class="fas fa-running"></i></i> Talents</label><br>
+                                    <input type="text" name="talent" size="40" value="Can swing sword like thread" readonly><br>
+                        
+                                    <label><i class="fas fa-address-book"></i>Personality type</label><br>
+                                    <input type="text" name="personality" size="40" value="Strong & Bold" readonly><br>
+                        
+                                    <label><i class="fas fa-hat-wizard"></i></i>Magical abilities</label><br>
+                                    <input type="text" name="magic" size="40" value="None" readonly><br> 
+                        
+                                    <label><i class="fas fa-journal-whills"></i>Hobbies</label><br>  
+                                    <input type="text" name="hobby" size="40" value="Singing" readonly><br>
+                                    
+                                    <label><i class="fas fa-jedi"></i>Mannerisms</label><br>
+                                    <input type="text" name="manner" size="40" value="None" readonly><br>
+                        
+                                    <label><i class="fas fa-stream"></i>Motivation</label><br>  
+                                    <input type="text" name="motivation" size="40" value="None" readonly><br> 
+                        
+                                    <label><i class="fas fa-stream"></i>Flaws</label><br>
+                                    <input type="text" name="flaw" size="40" value="Trusts easily" readonly><br>
+                                </form>
+                            </div>
+                            </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+                
+            </div>
+        </div>  
+
+        <br>
+
+        <footer class = "footer">
+            <div class = "footer-container">
+                <div>
+                    <h2>About Us </h2>
+                    <p>This is an online notebook, by authors, for authors. When we created and designed this website, we had the intention to help young budding authors to achieve their dreams of bringing their fictional universe to life. A dream led by many, but supported by few is likely to fail. We here at Castaway Corner wish to help you achieve that dream to the best of your ability. With more than 10,000 users nation-wide, we only hope to grow and develop our website further.</p>
+                    <ul class = "social-icons">
+                        <li class = "flex">
+                            <i class = "fa fa-twitter fa-2x"></i>
+                        </li>
+                        <li class = "flex">
+                            <i class = "fa fa-facebook fa-2x"></i>
+                        </li>
+                        <li class = "flex">
+                            <i class = "fa fa-instagram fa-2x"></i>
+                        </li>
+                    </ul>
+                </div>
+        
+                <div>
+                    <h2>Useful Links</h2>
+                    <a href = "#">Blog</a>
+                    <a href = "#">About</a>
+                    <a href = "#">Subscription</a>
+                    <a href = "#">Gift Card</a>
+                </div>
+        
+                <div>
+                    <h2>Privacy</h2>
+                    <a href = "#">Career</a>
+                    <a href = "#">About Us</a>
+                    <a href = "#">Contact Us</a>
+                    <a href = "#">Services</a>
+                </div>
+        
+                <div>
+                    <h2>Have A Question</h2>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-map-marker-alt"></i>
+                        </span>
+                        <span>
+                            A-1100 Rainbow Road, Mumbai, Maharashtra, 02
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-phone-alt"></i>
+                        </span>
+                        <span>
+                            7388902671
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-envelope"></i>
+                        </span>
+                        <span>
+                            info@domain.com
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>
